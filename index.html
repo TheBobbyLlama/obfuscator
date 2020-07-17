@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bob's API Key Obfuscator</title>
+	<link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body>
+	<h1>Bob's API Key Ofuscator</h1>
+	<section>
+		<div>
+			<form>
+				<h2>Enter your key here</h2>
+				<input type="text" id="key"></input>
+				<div class="flexMe">
+					<div>
+						<p>Divide into</p>
+						<p>
+							<input id="fragments" type="number" min="2" max="2"></value>
+							fragments
+						</p>
+					</div>
+					<div>
+						<p>Step by</p>
+						<p>
+							<input id="step" type="number" min="3" max="97" value="13"></input>
+						</p>
+					</div>
+				</div>
+				<div>
+					<button id="runMe" type="submit">Obfuscate!</button>
+				</div>
+			</form>
+		</div>
+		<div id="output">
+			<h3>Obfuscated!</h3>
+			<p>Your Key Reordered:</p>
+			<div id="keyOutput"></div>
+			<p>How to Rebuild it:</p>
+			<div id="keyBuildCode"></div>
+			<p>Reconstructed key using the above logic:</p>
+			<div id="keyRebuilt"></div>
+		</div>
+	</section>
+	<div id="modalBG">
+		<div>
+			<h2>Error</h2>
+			<p id="errorMessage"></p>
+			<button id="errorConfirm" type="button">Ok</button>
+		</div>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="./assets/js/script.js"></script>
+</body>
+</html>
