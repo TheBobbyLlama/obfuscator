@@ -75,7 +75,7 @@ section > div {
 }
 
 #modalBG.show {
-	display: flex;
+	display: flex !important;
 }
 
 #modalBG div {
