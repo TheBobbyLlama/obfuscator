@@ -8,6 +8,14 @@ li {
 	margin-left: 20px;
 }
 
+a:link {
+	color: #80c0ff;
+}
+
+a:visited {
+	color: #5090e0;
+}
+
 body {
 	background-color: #202020;
 	color: #e0e0e0;
@@ -42,6 +50,10 @@ h2 {
 	margin-bottom: 10px;
 }
 
+h3 {
+	margin-top: 10px;
+}
+
 section {
 	background-color: #404040;
 	border-radius: 8px;
@@ -56,6 +68,12 @@ section > div {
 	border: solid 2px #202020;
 	border-radius: 8px;
 	padding: 20px;
+}
+
+section > p {
+	color: #e0e0e0;
+	margin: 0 auto;
+	max-width: 400px;
 }
 
 #key {
